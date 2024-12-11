@@ -1,0 +1,8 @@
+
+CC=g++
+CFLAGS=-g -std=c++20 -Wall
+DTYPES='-DTYPES=FLOAT,FAST_FIXED(17,7),FIXED(32,8),FIXED(32,7),DOUBLE'
+DSIZES='-DSIZES=S(36,84)'
+
+all:
+	$(CC) $(CFLAGS) $(DTYPES) $(DSIZES) fluid.cpp
